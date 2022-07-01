@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-blue: #2c8af5;
+  --dark-blue: #05264b;
+  --light-blue: #ffffff;
+  --main-grey: #c4c4cf96;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+
+body {
+  background: rgb(16, 27, 39);
+  padding: 30px 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: var(--main-grey);
+}
+
+/* NAV SECTION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav select {
+  background: none;
+  color: white;
+}
+nav option {
+  color: black;
+}
+
+nav button {
+  padding: 10px 15px;
+  background-color: var(--main-blue);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px white;
+  margin-left: 20px;
+}
+nav a {
+  margin: 0 10px;
+  color: var(--main-grey);
+  font-size: 15px;
+}
+
+/* MAIN SECTION */
+.main {
+  display: flex;
+}
+.main img {
+  width: 500px;
+}
+
+.main h1 {
+  font-size: 39px;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 150px var(--main-blue);
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.btn {
+  padding: 13px 30px;
+  color: white;
+  border: 2px solid var(--main-blue);
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.btn-main {
+  background-color: var(--main-blue);
+  margin-right: 15px;
+}
+
+.btn-main:hover {
+  background: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+.btn-secondary:hover {
+  color: var(--main-blue);
+  background: var(--light-blue);
+  border: 2px solid var(--light-blue);
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+}
+.card {
+  background-color: var(--dark-blue);
+  margin-right: 30px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  transition: all 0.5s;
+}
+.card h1 {
+  font-size: 20px;
+}
+.card p {
+  font-size: 13px;
+}
+.card img {
+  width: 150px;
+}
+.card:hover {
+  background-color: #0c529f;
+  transform: scale(1.1);
+  transition: all 0.5s;
+
+  box-shadow: 1px 1px 20px var(--dark-blue);
+}
